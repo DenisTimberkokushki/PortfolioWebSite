@@ -1,0 +1,12 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vw;
+    color: var(--def_text);
+}
+main > a{
+    margin-top: 5vw;
+    font-size: 1.5vw;
+    color: var(--def_text);
+}

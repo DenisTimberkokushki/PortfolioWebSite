@@ -1,0 +1,21 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > div{
+    margin-top: 1.5vw;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+p{
+    color: var(--def_text);
+}
+
+a{
+    color: var(--context2);
+}

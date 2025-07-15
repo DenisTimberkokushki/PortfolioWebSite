@@ -1,0 +1,113 @@
+:root{
+    --def_text: #2D3748;
+    --context1: #7E57C2;
+    --context2: #6D28D9;
+    --goodmorning: #ffb978;
+    --goodday: #dacb00;
+    --goodevening: #d66eff;
+    --goodnight: #37008f;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url(../fonts/Unbounded-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: "Unbounded";
+    transition: 0.2s ease;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: #FFFBF5;
+}
+
+header{
+    display: flex;
+    flex: row;
+    width: 98%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--def_text);
+}
+
+.goodjs{
+    font-size: 1.4em;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+
+
+.navigation > p{
+    background-image: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgb(82, 0, 175) 25%, rgb(117, 0, 252) 50%, rgba(82, 0, 175) 75%, rgba(0, 0, 0, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: background 0.5s ease;
+    transition: 0.3s ease;
+    background-size: 200% 100%;
+    background-position: left;
+    margin: 0;
+}
+
+.navigation > p:hover{
+    transform: scale(1.05);
+    background-position: right;
+}
+
+header > button{
+    width: 12vw;
+    height: 3vw;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1em;
+    background-image: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgb(82, 0, 175) 25%, rgb(117, 0, 252) 50%, rgba(82, 0, 175) 75%, rgba(0, 0, 0, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: background 0.5s ease;
+    transition: 0.3s ease;
+    background-size: 200% 100%;
+    background-position: left;
+    cursor: pointer;
+}
+header > button:hover{
+    transform: scale(1.05);
+    background-position: right;
+}
+
+
+.select{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 3vw;
+    width: 10vw;
+    right: 1vw;
+    top: 2vw;
+}
+.select > button{
+    width: 10vw;
+    background-color: #e6e6e6;
+    border: none;
+    cursor: pointer;
+}
+
+.select > button:hover{
+    background-color: var(--context1);
+    color: white;
+}
